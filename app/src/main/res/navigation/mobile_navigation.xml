@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.food.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.food.ui.gallery.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.food.ui.slideshow.PickupFragment"
+        android:label="Pickup"
+        tools:layout="@layout/fragment_pickup" />
+    <fragment
+        android:id="@+id/nav_package"
+        android:name="com.example.food.ui.slideshow.PickupFragment"
+        android:label="package"
+        tools:layout="@layout/fragment_pickup" />
+</navigation>

@@ -9,17 +9,18 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_account"
             android:icon="@drawable/account_circle_24"
             android:title="Account" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_pickup"
             android:icon="@drawable/location_24"
             android:title="Pickup" />
         <item
         android:id="@+id/nav_package"
         android:icon="@drawable/inbox_24"
         android:title="My Packages" />
+
 
     </group>
 </menu>

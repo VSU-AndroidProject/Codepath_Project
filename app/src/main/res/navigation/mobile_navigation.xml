@@ -27,5 +27,10 @@
         android:name="com.example.food.ui.slideshow.Packages"
         android:label="Package"
         tools:layout="@layout/fragment_package" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.food.ui.contact.Contact"
+        android:label="Contact us"
+        tools:layout="@layout/fragment_pickup" />
 
 </navigation>

@@ -16,15 +16,9 @@
         android:name="com.example.food.ui.gallery.AccountFragment"
         android:label="Account"
         tools:layout="@layout/fragment_account" />
-
-    <fragment
-        android:id="@+id/nav_pickup"
-        android:name="com.example.food.ui.slideshow.PickupFragment"
-        android:label="Pickup"
-        tools:layout="@layout/fragment_pickup" />
     <fragment
         android:id="@+id/nav_package"
-        android:name="com.example.food.ui.slideshow.Packages"
+        android:name="com.example.food.ui.slideshow.placeholder.FrmtContact"
         android:label="Package"
         tools:layout="@layout/fragment_package" />
     <fragment
@@ -32,5 +26,6 @@
         android:name="com.example.food.ui.contact.Contact"
         android:label="Contact us"
         tools:layout="@layout/fragment_pickup" />
+
 
 </navigation>

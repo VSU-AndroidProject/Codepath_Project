@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:id="@+id/name"
-        android:hint="Name: "
+        android:hint="Name:  "
         android:ems="10"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"/>

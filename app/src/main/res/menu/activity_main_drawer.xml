@@ -12,10 +12,7 @@
             android:id="@+id/nav_account"
             android:icon="@drawable/account_circle_24"
             android:title="Account" />
-        <item
-            android:id="@+id/nav_pickup"
-            android:icon="@drawable/location_24"
-            android:title="Pickup" />
+
         <item
         android:id="@+id/nav_package"
         android:icon="@drawable/inbox_24"

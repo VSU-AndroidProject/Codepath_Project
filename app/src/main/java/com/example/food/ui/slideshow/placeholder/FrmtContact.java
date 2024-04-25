@@ -1,9 +1,11 @@
 package com.example.food.ui.slideshow.placeholder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -16,7 +18,7 @@ import com.example.food.databinding.FragmentPackageBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FrmtContact extends Fragment {
+public class FrmtContact extends Fragment  {
 
     private FragmentPackageBinding binding;
 
@@ -44,21 +46,26 @@ public class FrmtContact extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         listCont = new ArrayList<>();
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
-        listCont.add(new Contact("Mahadi Hasan","01717677540"));
+        listCont.add(new Contact("Amazon Package","01717677541"));
+        listCont.add(new Contact("Best Buy Package ","01717677543"));
+        listCont.add(new Contact("Shien Package","01717677544"));
+        listCont.add(new Contact("US Mail","01717677545"));
+        listCont.add(new Contact("Amazon Package","01717677546"));
+        listCont.add(new Contact("Bookstore Package","01717677547"));
+        listCont.add(new Contact("Walmart","01717677548"));
+        listCont.add(new Contact("Target","01717677549"));
+
 
     }
+
+
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
     }
+
+
+
 }

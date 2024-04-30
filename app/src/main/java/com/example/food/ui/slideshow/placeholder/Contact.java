@@ -4,15 +4,18 @@ public class Contact {
 
     private String name;
     private String phn;
+    private String orderNum;
     private int photo;
 
     public Contact() {
 
     }
 
-    public Contact(String name, String phn) {
+    public Contact(String name, String phn, String orderNum) {
         this.name = name;
         this.phn = phn;
+        this.orderNum = orderNum;
+
 
     }
 
@@ -23,6 +26,9 @@ public class Contact {
     public String getPhn() {
         return phn;
     }
+    public String getOrderNum() {
+        return orderNum;
+    }
 
 
 
@@ -32,6 +38,9 @@ public class Contact {
 
     public void setPhn(String phn) {
         this.phn = phn;
+    }
+    public void setOrderNum(String orderNum) {
+        this.orderNum = orderNum;
     }
 
 

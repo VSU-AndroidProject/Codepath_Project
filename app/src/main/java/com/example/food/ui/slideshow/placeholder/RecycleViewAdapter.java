@@ -44,6 +44,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
         holder.name.setText(contactList.get(position).getName());
         holder.phone_num.setText(contactList.get(position).getPhn());
+        holder.order.setText(contactList.get(position).getOrderNum());
 
         switch (position){
             case 0:
@@ -133,6 +134,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
         TextView name;
         TextView phone_num;
+        TextView order;
         ImageView imageView;
 
 
@@ -141,6 +143,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
             name = (TextView) itemView.findViewById(R.id.name_contact);
             phone_num = (TextView) itemView.findViewById(R.id.ph_number);
+            order = (TextView) itemView.findViewById(R.id.order);
 
         }
     }

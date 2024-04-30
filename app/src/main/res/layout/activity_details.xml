@@ -10,10 +10,10 @@
     <ImageView
         android:id="@+id/qrCode"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:layout_weight="40"
+        android:layout_height="447dp"
+        android:layout_weight="10"
         android:scaleType="centerCrop"
-        android:src="@mipmap/qrcode"
+        android:src="@drawable/img"
 
         ></ImageView>
 

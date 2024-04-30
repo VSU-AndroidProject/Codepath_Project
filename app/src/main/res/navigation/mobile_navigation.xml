@@ -20,12 +20,13 @@
         android:id="@+id/nav_package"
         android:name="com.example.food.ui.slideshow.placeholder.FrmtContact"
         android:label="Package"
-        tools:layout="@layout/fragment_package" />
+        tools:layout="@layout/contact_frmt" />
     <fragment
         android:id="@+id/nav_contact"
         android:name="com.example.food.ui.contact.Contact"
         android:label="Contact us"
         tools:layout="@layout/fragment_pickup" />
+
 
 
 </navigation>

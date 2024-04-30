@@ -2,12 +2,15 @@ package com.example.food.ui.slideshow.placeholder;
 
 import android.content.Context;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.food.R;
@@ -41,6 +44,83 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
         holder.name.setText(contactList.get(position).getName());
         holder.phone_num.setText(contactList.get(position).getPhn());
+
+        switch (position){
+            case 0:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), detailsActivity.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+            case 1:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ActivityTwo.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+            case 2:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ActivityThree.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+            case 3:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ActivityFour.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+            case 4:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ActivityFive.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+            case 5:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ActivitySix.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+            case 6:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ActivitySeven.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+            case 7:
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ActivityEight.class);
+                        v.getContext().startActivity(intent);
+                    }
+                });
+                break;
+        }
+
+
 
     }
 

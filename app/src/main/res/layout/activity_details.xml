@@ -18,13 +18,32 @@
         ></ImageView>
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/Info1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="Pickup"
+        android:text="Package from Amazon"
         android:textColor="#000"
         android:textSize="20sp"></TextView>
 
+    <TextView
+        android:id="@+id/Info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Delivered 3:14pm Tuesday"
+        android:textColor="#000"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/Info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="AZ9728354630189"
+        android:textColor="#000"
+        android:textSize="20sp"></TextView>
 </LinearLayout>

@@ -22,18 +22,25 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:id="@+id/hall"
-        android:hint="Residence Hall  "
+        android:id="@+id/aname"
+        android:hint="Your Name"
         android:ems="10"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"/>
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="time"
-        android:hint="Preferred Delivery Time "
+        android:inputType="textEmailAddress"
+        android:hint="Campus Email: "
         android:ems="10"
-        android:id="@+id/time"/>
+        android:id="@+id/cemail"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Residence Hall"
+        android:ems="10"
+        android:id="@+id/hall"/>
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

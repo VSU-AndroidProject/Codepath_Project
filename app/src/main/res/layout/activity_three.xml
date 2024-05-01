@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/pickup"
     android:layout_width="match_parent"
@@ -10,10 +9,9 @@
     <ImageView
         android:id="@+id/qrCode"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:layout_weight="40"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/qrcode"
+        android:layout_height="319dp"
+        android:layout_weight="10"
+        android:src="@drawable/shein"
 
         ></ImageView>
 
@@ -27,15 +25,7 @@
         android:textColor="#000"
         android:textSize="20sp"></TextView>
 
-    <TextView
-        android:id="@+id/Info2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:text="Delivered 9:34am Tuesday"
-        android:textColor="#000"
-        android:textSize="20sp"></TextView>
+
 
     <TextView
         android:id="@+id/Info3"
@@ -43,7 +33,24 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="SC36542789976"
+        android:text="Tracking #: SC36542789976"
         android:textColor="#000"
         android:textSize="20sp"></TextView>
+    <Button
+        android:id="@+id/pickupBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="Pick-Up"></Button>
+
+    <Button
+        android:id="@+id/deliverBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver"></Button>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pb"></ProgressBar>
 </LinearLayout>

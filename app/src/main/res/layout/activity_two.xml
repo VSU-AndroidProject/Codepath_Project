@@ -1,49 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/pickup"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-
-android:orientation="vertical"
-android:weightSum="100">
-
-<ImageView
-    android:id="@+id/qrCode"
+    android:id="@+id/pickup"
     android:layout_width="match_parent"
-    android:layout_height="360dp"
-    android:layout_weight="40"
-    android:scaleType="centerCrop"
-    android:src="@mipmap/qrcode"
+    android:layout_height="match_parent"
 
-    ></ImageView>
+    android:orientation="vertical"
+    android:weightSum="100">
 
-<TextView
+    <ImageView
+        android:id="@+id/bestbuy"
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:layout_weight="10"
+        android:src="@drawable/bestbuy"
+
+        ></ImageView>
+
+    <TextView
     android:id="@+id/Info1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_marginTop="20dp"
-    android:text="Package from Best Buy"
+    android:text="Delivery from Best Buy"
     android:textColor="#000"
     android:textSize="20sp"></TextView>
 
-<TextView
-    android:id="@+id/Info2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="20dp"
-    android:text="Delivered 6:25pm Monday"
-    android:textColor="#000"
-    android:textSize="20sp"></TextView>
+
 
 <TextView
+
     android:id="@+id/Info3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_marginTop="20dp"
-    android:text="BB142539630397"
+    android:text="Tracking #: BB142539630397"
     android:textColor="#000"
     android:textSize="20sp"></TextView>
+    <Button
+        android:id="@+id/pickupBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="Pick-Up"></Button>
+
+    <Button
+        android:id="@+id/deliverBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver"></Button>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pb"></ProgressBar>
 </LinearLayout>

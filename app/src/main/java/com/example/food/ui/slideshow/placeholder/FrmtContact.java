@@ -61,13 +61,13 @@ public class FrmtContact extends Fragment {
         public void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             listCont = new ArrayList<>();
-            listCont.add(new Contact("Amazon Package","01717677541", "4/19/2024"));
-            listCont.add(new Contact("Best Buy Package ","01717677543", "5/05/2024"));
-            listCont.add(new Contact("Shien Package","01717677544", "3/17/2024"));
-            listCont.add(new Contact("US Mail","01717677545","1/12/2024"));
-            listCont.add(new Contact("Amazon Package","01717677546","1/12/2024"));
-            listCont.add(new Contact("Bookstore Package","01717677547","1/12/2024"));
-            listCont.add(new Contact("Walmart","01717677548","1/12/2024"));
+            listCont.add(new Contact("Amazon Package","AZ9728354630189", "4/19/2024"));
+            listCont.add(new Contact("Best Buy Package ","BB142539630397", "5/05/2024"));
+            listCont.add(new Contact("Shein Package","SC36542789976", "3/17/2024"));
+            listCont.add(new Contact("US Mail","US3564926340273","1/12/2024"));
+            listCont.add(new Contact("Amazon Package","AMZ655657875","1/12/2024"));
+            listCont.add(new Contact("Bookstore Package","FX9728354630189","1/12/2024"));
+            listCont.add(new Contact("Walmart","SX86767654359","1/12/2024"));
 
 
 

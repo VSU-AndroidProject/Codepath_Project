@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +28,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     Context context;
     List<Contact> contactList;
 
+
     public RecycleViewAdapter(Context context, List<Contact> contactList) {
         this.context = context;
         this.contactList = contactList;
@@ -35,6 +38,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v;
         v = LayoutInflater.from(context).inflate(R.layout.item_contact, parent, false);
+
         MyViewHolder myViewHolder = new MyViewHolder(v);
         return myViewHolder;
     }
@@ -116,10 +120,12 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
                     public void onClick(View v) {
                         Intent intent = new Intent(v.getContext(), ActivityEight.class);
                         v.getContext().startActivity(intent);
+                        Toast.makeText(context,":", Toast.LENGTH_SHORT).show();
                     }
                 });
                 break;
         }
+
 
 
 
@@ -138,12 +144,19 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         ImageView imageView;
 
 
+
+
         public MyViewHolder(View itemView) {
             super(itemView);
 
             name = (TextView) itemView.findViewById(R.id.name_contact);
             phone_num = (TextView) itemView.findViewById(R.id.ph_number);
             order = (TextView) itemView.findViewById(R.id.order);
+
+
+
+
+
 
         }
     }
